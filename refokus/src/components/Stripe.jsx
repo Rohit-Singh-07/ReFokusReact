@@ -1,16 +1,10 @@
 import React from 'react'
 
-function Stripe() {
-    var data = [
-        {  url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63c9ce90a51cd7cf6b3689fb_css-design-awards-logos-id1L9L8Yvp%201.svg", number: 48},
-        {  url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63d6e83420934a94d642103b_NCC2021_LogoLockup%201.svg", number: 2},
-        {  url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63c9ce90a51cd75d563689fd_Awwards-logotype-2018%201.svg", number: 11},
-        {  url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63c9ce90a51cd7cf6b3689fb_css-design-awards-logos-id1L9L8Yvp%201.svg", number: 48},
-        {  url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63d6e83420934a94d642103b_NCC2021_LogoLockup%201.svg", number: 2},
-        {  url: "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63c9ce90a51cd75d563689fd_Awwards-logotype-2018%201.svg", number: 11}]
+function Stripe({url, number}) {
   return (
-    <div>
-      Stripe
+    <div className='md:h-20 md:w-72 sm:h-16 sm:w-60 h-16 w-52 border-2 border-zinc-700 border-l-0 text-white flex items-center justify-center mt-[6.5vh] flex-shrink-0 overflow-hidden'>
+      <div className='flex justify-between w-full px-6'><img src={url} alt="" />
+      <h1>{number}</h1></div>
     </div>
   )
 }

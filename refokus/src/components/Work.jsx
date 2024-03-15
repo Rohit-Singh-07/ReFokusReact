@@ -48,13 +48,13 @@ function Work() {
   return (
     <div
       key={i}
-      className={`w-[18vw] -translate-x-1/2 -translate-y-1/2 h-[25vw] absolute`}
+      className={`w-[19.5vw] -translate-x-1/2 -translate-y-1/2 h-[20vw] absolute rounded-xl overflow-hidden`}
       style={{ top: image.top, left: image.left, opacity: image.isActive ? 1 : 0 }}
     >
       <img
         src={image.url}
         alt=""
-        className="w-full h-full object-cover rounded-lg"
+        className="w-full h-full object-cover"
       />
     </div>
   );
