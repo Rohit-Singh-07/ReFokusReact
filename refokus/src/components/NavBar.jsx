@@ -3,7 +3,8 @@ import Button from "./Button";
 
 function NavBar() {
   return (
-    <div className="w-[89vw] mx-auto py-6 flex justify-between items-center text-white font-['satoshi'] font-light text-sm border-b-2 border-zinc-700">
+    <div className="w-[100vw] h-auto px-[5vw] bg-zinc-900 fixed z-10">
+      <div className="w-[89vw] py-6 flex justify-between items-center text-white font-['satoshi'] font-light text-sm border-b-2 border-zinc-700 bg-zinc-900">
       <div className="flex items-center justify-between">
         <img
           className="w-16 md:w-20 mr-[6vw]"
@@ -27,8 +28,9 @@ function NavBar() {
       </div>
       <div className="flex items-center justify-between lg:w-[55vw] xl:border-l-2 pl-[3vw] border-zinc-700">
         <h1 className="hidden lg:block">News</h1>
-        <Button />
+        <Button title="Start a Project"/>
       </div>
+    </div>
     </div>
   );
 }

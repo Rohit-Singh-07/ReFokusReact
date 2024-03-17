@@ -3,7 +3,7 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 function Cards() {
   return (
-    <div className="flex justify-center text-white gap-1 font-['satoshi']">
+    <div className="flex justify-center text-white gap-1 font-['satoshi'] mt-3">
       <div className="justify-start w-[30vw] h-[25vw] bg-zinc-800 rounded-xl p-5">
         <div className="flex justify-between h-[14%]">
           <h3>Up Next: News</h3>
@@ -14,7 +14,7 @@ function Cards() {
         </h2>
         <p className="font-light">Explore what drives our team</p>
       </div>
-      <div className="justify-start w-[58vw] bg-zinc-700 rounded-xl p-5">
+      <div className="justify-start w-[58vw] h-[25vw] bg-zinc-700 rounded-xl p-5">
         <div className="flex justify-between h-[14%]">
           <h3>Get in touch</h3>
           <HiOutlineArrowNarrowRight />

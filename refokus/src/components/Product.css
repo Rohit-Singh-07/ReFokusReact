@@ -1,0 +1,11 @@
+@keyframes anime {
+    from {height: 27vh; background-color: none;}
+    to {height: 29vh; background-color: rgb(66, 66, 174);}
+  }
+  
+
+:hover.product{
+    animation: anime .8s linear;
+    animation-delay: .1s;
+    animation-fill-mode: forwards;
+}
