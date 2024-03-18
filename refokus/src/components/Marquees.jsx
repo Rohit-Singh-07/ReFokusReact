@@ -12,7 +12,6 @@ function Marquees() {
       "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/65b2d275e1d5aa08ccc379dd_ypo.svg",
       "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/65b2d275909535ff431975cf_lavender.svg",
       "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/65b2d36963b956910ca67534_remind.svg",
-      "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/65b2ce14e6c85b010c2e1e3c_Logo%20White%201.svg",
     ],
     [
       "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/65b2d275f0442508aceaec02_accel.svg",
@@ -28,8 +27,20 @@ function Marquees() {
     ],
   ];
   return (
-    <div className="my-60">
-      {images.map((elem, idx) => <Marqee imageUrl={elem} key={idx}></Marqee>)}
+    <div className="my-60 relative">
+      {images.map((elem, idx) => <Marqee imageUrl={elem} key={idx} direction={idx===0 ? "left": "right"}></Marqee>)}
+      <div className="absolute top-0 flex justify-between w-[100vw]">
+      <div className="w-[49vw] gradBox h-40 rounded-r-full" style={{ 
+      background: 'linear-gradient(to right, rgba(0, 0, 0, 0.070), rgba(0, 0, 0, 0.017)', 
+      boxShadow: '0px 400px 800px rgba(0, 0, 0, 0.1)',
+      
+    }}></div>
+      <div className="w-[49vw] gradBox h-40 rounded-l-full" style={{ 
+      background: 'linear-gradient(to right, rgba(0, 0, 0, 0.015), rgba(0, 0, 0, 0.070)', 
+      boxShadow: '0px 400px 800px rgba(0, 0, 0, 0.1)',
+      
+    }}></div>
+      </div>
     </div>
   );
 }

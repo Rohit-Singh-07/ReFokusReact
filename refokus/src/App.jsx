@@ -16,7 +16,7 @@ const App = () => {
   const locomotiveScroll = new LocomotiveScroll();
   
   return (
-    <div className='min-h-screen bg-zinc-900 overflow-y-hidden'>
+    <div className='min-h-screen bg-zinc-900 overflow-hidden'>
       <NavBar/>
       <Work></Work>
       <Stripes></Stripes>
